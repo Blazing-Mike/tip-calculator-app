@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+<body>
+  <div class="logo-container">   <img src="./images/logo.svg" alt="logo" class="logo"></div>
+ <div class="container">
+ <div class="bill-spliter"> <!-- BILL SPLITTER-->
+<div class="input-section">
+  <div class="label-container"> <label for="bill">  Bill</label></div>
+  <div class="input-container">
+    <input type="number" name="bill" class="bill-input input">
+    <input type="image" src="./images/icon-dollar.svg" alt="icon-dollar" class="input-icon">
+  </div>
+  
+  
+  
+  <div class="tip-section">
+  <div class="label-container">  <label for="selct tip">  Select Tip %</label></div>
+  <button class="tip-percent fivePercent"> <span class="percent">5%</span></button>
+  <button class="tip-percent tenPercent"> <span class="percent">  10%</span></button>
+  <button class="tip-percent fifteenPercent"> <span class="percent">15%</span></button>
+  <button class="tip-percent twentyFivePercent"> <span class="percent">25%</span></button>
+  <button class="tip-percent fiftyPercent"> <span class="percent">50%</span></button>
+  <input class="tip-percent custom" placeholder="Custom" id="customTip"> <span class="percent custom-percent">Custom</span>
+  </div>
+  
+<div class="label-flex">  <label for="Number of people">  Number of People</label>
+  <p class="error">Can't be zero</p></div>
+  <div class="input-container">
+    <input type="number" name="bill" class="people-input input">
+  <input type="image" src="./images/icon-person.svg" alt="icon-person" class="input-icon">
+  </div>
+</div>
+
+<div class="tip-container">
+
+  <div class="tip-container-item">
+    <p class="para"> Tip Amount
+<span class="small">/ person</span>
+    </p>
+    <img src="./images/icon-dollar copy.svg" alt="icon-dollar" class="result-icon"><p class="result-person result"></p>
+  </div>
+
+  <div class="tip-container-item">
+    <p class="para"> Total
+      <span class="small">/ person</span>
+          </p>
+          <img src="./images/icon-dollar copy.svg" alt="icon-dollar" class="result-icon person-icon"><p class="result-total result"></p>
+  </div>
+  
+<input type="submit" value="Reset" class="submit-btn">
+</div>
+
+
+ </div> <!-- Billn splitter end-->
+ </div>
+
+  </div>
+  <script src="./assets/script.js"></script>
+</body>
+</html>

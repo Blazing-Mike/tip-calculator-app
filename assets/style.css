@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  font-size: 15px;
+  background: hsl(185, 41%, 84%);
+  margin-top: 5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 6rem;
+  margin: 1rem;
+}
+.logo-container {
+  text-align: center;
+  margin-top: -5rem;
+
+}
+.input-icon {
+  width: 1rem;
+  position: absolute;
+  margin-left: 10px;
+}
+.result-icon {
+  width: 1.5rem;
+  margin-right: -3rem ;
+}
+.person-icon{
+margin-right: -7rem;
+}
+/* typo */
+.para {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.small {
+  font-size: 1.1rem;
+  display: block;
+  color: hsl(186, 14%, 43%);
+}
+
+.percent {
+  font-size: 1.5rem;
+}
+label {
+  font-size: 1.1rem;
+  display: block;
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.result {
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+.custom-percent {
+  color: hsl(183, 100%, 15%);
+}
+/* container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 100vh;
+
+}
+/* bill container */
+.bill-spliter {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  width: 20rem;
+}
+
+.input {
+  width: 18rem;
+  height: 2.4rem;
+  text-align: right;
+  background: hsl(185, 41%, 84%);
+  font-size: 24px;
+  padding: 10px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  border: transparent;
+  border-radius: 5px;
+}
+.input:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+  outline: none;
+}
+.input::placeholder {
+  text-align: center;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.tip-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.label-container {
+  width: 100%;
+}
+
+.label-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 10px;
+  gap: 5px;
+  flex-wrap:wrap;
+}
+
+.error{
+  font-size: 0.9rem;
+  display: none;
+  color:#bd3e13;
+  font-weight: 600;
+}
+.tip-percent {
+  background: hsl(183, 100%, 15%);
+  color: white;
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+}
+
+.tip-percent:hover{
+  background-color: hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%) ;
+  text-align: center;
+}
+.custom {
+  background: hsl(185, 41%, 84%);
+  font-size: 1.4rem;
+  background-color: hsl(172, 67%, 45%);
+}
+
+.custom:hover{
+  background: hsl(185, 41%, 84%);
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.custom:focus{
+  border: 2px solid hsl(172, 67%, 45%);
+  outline: none;
+}
+
+.custom::placeholder{
+  color:hsl(183, 100%, 15%) ;
+  padding-left: 20px;
+}
+.tip-percent .active {
+  background: hsl(172, 67%, 45%);
+}
+
+.tip-container {
+  background: hsl(183, 100%, 15%);
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.tip-container-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.submit-btn {
+  width: 17rem;
+  height: 2.3rem;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin: 1rem;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.submit-btn:hover{
+  background:hsl(185, 41%, 84%) ;
+}
+@media (min-width: 768px) {
+  .logo-container{
+  margin-top: -3rem;
+  }
+  .error{
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .result-icon {
+    width: 1.5rem;
+    margin-right: -6rem;
+  }
+  .person-icon{
+    margin-right: -10rem;
+    }
+  .logo-container {
+    margin-bottom: -7rem;
+  }
+  .bill-spliter {
+    width: 55rem;
+    display: flex;
+    padding: 5px 10px;
+  }
+  .tip-container {
+    width: 30rem;
+  }
+  .input-section {
+    width: 30rem;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+  .input {
+    width: 25rem;
+    height: 2.7rem;
+  }
+  .tip-percent {
+    height: 2.7rem;
+  }
+  .tip-container-item {
+    padding: 1rem;
+  }
+  .result {
+    font-size: 2.5rem;
+  }
+  .submit-btn {
+    width: 25rem;
+    margin-top: 7rem;
+    height: 2.5rem;
+  }
+}
